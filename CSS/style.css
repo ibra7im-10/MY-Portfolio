@@ -1,0 +1,292 @@
+:root{
+    --maincolor:rgb(255, 196, 4);
+}
+
+
+/********************************************************* start-header****************************************************************/
+header nav{
+    padding-left: 150px;
+    padding-right: 80px;
+    background-color: var(--maincolor);
+    min-height: 60px;
+}
+header nav .logo{
+    letter-spacing: 2.5px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+header nav div ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: ease 0.5s;
+}
+header nav div ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+header .main{
+    background: linear-gradient(rgba(8, 8, 8, 0.363),rgba(14, 13, 13, 0.384)),url(../IMAGES/pexels-joyston-judah-933054.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    margin-top: 5px;
+    position: relative;
+}
+header .main div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+header .main img{
+    border-radius: 50%;
+    border: 3px solid var(--maincolor);
+    width: 180px;
+    height: 180px;
+}
+header .main div h1{
+    margin-top: 30px;
+    color: rgb(224, 224, 224);
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+header .main div p{
+    color: var(--maincolor);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/********************************************************* end-header****************************************************************/
+
+/******************************************************* start-about.me *************************************************/
+.about-me{
+    margin-bottom: 80px;
+    text-align: center;
+}
+.about-me .about{
+    position: relative;
+    margin: 100px auto;
+    width: 250px;
+    color: rgb(65, 65, 65);
+}
+.about-me .about h1{
+    font-weight: bold;
+}
+
+.about-me .content h1{
+    font-size: 18px;
+}
+.about-me .content h5{
+    font-size: 20px;
+    color: var(--maincolor);
+}
+.about-me .content p{
+    line-height: 1.6;
+    font-weight: 500;
+}
+.about-me .container table tr td:first-child{
+    color: var(--maincolor);
+    font-size: 18px;
+}
+.about-me .container table tr td:last-child{
+    color: rgb(145, 145, 145);
+}
+.about-me .container .images img{
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 10px -10px 0px var(--maincolor);
+    transition: ease .5s;
+}
+.about-me .container .images img:hover{
+    box-shadow: -10px 10px 0px var(--maincolor);
+}
+.about-me .skills h1{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.about-me .skills .prog-holder{
+margin-bottom: 40px;
+}
+.about-me .skills .prog-holder .prog{
+    background-color: rgb(224, 224, 224);
+    height: 10px;
+}
+.about-me .skills .prog-holder .prog span{
+    background-color: var(--maincolor);
+    height:100%;
+    display: block;
+    position: relative;
+}
+.about-me .skills .prog-holder .prog h5{
+    margin-bottom: 15px;
+}
+.about-me .skills .prog-holder .prog span::before{
+    content: attr(data-progress);
+    color: #fff;
+    background-color: #000;
+    position: absolute;
+    top: -35px;
+    right: -18px;
+    width: 40px;
+    text-align: center;
+    border-radius: 4px;
+}
+.about-me .skills .prog-holder .prog span::after{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    border-color: #000 transparent transparent transparent;
+    top: -11px;
+    right: -8px;
+}
+/******************************************************* end-about.me *************************************************/
+
+/******************************************************* start-services.section *************************************************/
+.services{
+    background-color: rgb(231, 231, 231);
+    padding: 5px;
+    margin: 50px auto;
+    padding-bottom: 100px;
+}
+.services .about{
+    position: relative;
+    margin: 80px auto;
+    width: 250px;
+    color: rgb(65, 65, 65);
+}
+.services .about h1{
+   font-weight: bold;
+}
+
+.services .serv{
+    text-align: center;
+    padding: 20px 10px;
+    background-color: rgb(187, 187, 187);
+    text-transform: capitalize;
+    border-radius: 10px;
+    box-shadow: 7px 7px 0px rgb(68, 68, 68);
+    transition: ease 0.5s;
+}
+.services .serv:hover{
+    box-shadow: -7px -7px 0px rgb(68, 68, 68);
+    transform: scale(1.1);
+}
+
+.services .serv h1{
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.services .serv p{
+    color:rgb(83, 83, 83);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+/******************************************************* end-services.section *************************************************/
+
+/******************************************************* start-projects.section *************************************************/
+.projects{
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+.projects .about{
+    position: relative;
+    margin: 50px auto;
+    width: 250px;
+    color: rgb(65, 65, 65);
+}
+.projects .about h1{
+    font-weight: bold;
+}
+
+.projects .pro{
+    width: 350px;
+}
+
+.projects .pro:hover a{
+margin-left: 20px;
+}
+.projects .pro h5{
+    font-size: 16px;
+    color: var(--maincolor);
+    transition: ease 0.5s;
+}
+.projects .pro:hover h5{
+    color: rgba(0, 0, 0, 0.705);
+}
+.projects .pro a{
+color: #fff;
+text-decoration: none;
+transition: ease 0.5s;
+}
+/******************************************************* end-projects.section *************************************************/
+
+/******************************************************* start-contact.section *************************************************/
+.contact{
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+.contact .about{
+    position: relative;
+    margin: 50px auto;
+    width: 250px;
+    color: rgb(65, 65, 65);
+}
+.contact .about h1{
+    font-weight: bold;
+}
+
+.contact .cont{
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray;
+    transition: ease 0.5s;
+}
+.contact .cont:hover{
+    transform: scaleX(1.1);
+}
+.contact .cont i{
+    font-size: 70px;
+}
+.contact .cont p{
+    font-size: 18px;
+}
+.contact .cont h1{
+    font-size: 22px;
+    margin: 20px auto;
+}
+/******************************************************* end-contact.section *************************************************/
+
+/******************************************************* start-footer *************************************************/
+footer{
+    border-top: 5px solid var(--maincolor);
+    min-height: 50px;
+}
+footer .foots div:last-child{
+    margin-top: 50px;
+}
+footer .foots img{
+    height:30px ;
+    width:30px;
+    border-radius: 50%;
+}
+footer .foots p{
+    color: #fff;
+}
+footer .foots span{
+    color: var(--maincolor);
+}
+/******************************************************* end-footer *************************************************/
